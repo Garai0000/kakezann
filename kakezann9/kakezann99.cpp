@@ -1,3 +1,5 @@
+#include <stdio.h>
+
 int main(void)
 {
     int a;
@@ -9,9 +11,9 @@ int main(void)
             d[a][b] = a * b;
         }
     }
-    printf("  ");
+    //printf("  ");
     for (a = 1; a <= 99; a++) {
-        printf("%5d", a);
+        printf("%6d", a);
     }
     printf("\n");
     for (b = 1; b <= 99; b++) {
@@ -20,7 +22,7 @@ int main(void)
 
         for (a = 1; a <= 99; a++) {
 
-            printf("%5d", d[a][b]);
+            printf("%6d", d[a][b]);
         }
     }
     return 0;
